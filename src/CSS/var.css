@@ -1,6 +1,6 @@
 :root {
     --cor-de-fundo: #fdfce5;
-    
+
     --cor-primaria: #000000;
     --cor-secundaria: #ae1507;
     --cor-terciaria: #8a5339;
@@ -8,27 +8,29 @@
     --cor-fonte-1: #ffffff;
     --cor-fonte-2: #000000;
 
-    --filtro-preto: rgba(0, 0, 0, 0.6);
+    --filtro-preto: rgba(0, 0, 0, 0.5);
 
     --fonte-principal: "Lato", serif;
     --fonte-secundaria: "Raleway", serif;
 
     --tamanho-fonte-1: 7rem;
     --tamanho-fonte-2: 2rem;
-    --tamanho-fonte-3: 1.5rem;
-    --tamanho-fonte-4: 1rem;
-    --tamanho-fonte-5: 0.8rem;
+    --tamanho-fonte-3: 1.6rem;
+    --tamanho-fonte-4: 1.4rem;
+    --tamanho-fonte-5: 1.2rem;
+    --tamanho-fonte-6: 1rem;
 
     --peso-fonte-1: 700;
     --peso-fonte-2: 500;
     --peso-fonte-3: 300;
+    --peso-fonte-4: 100;
 
     --espacamento-fonte-1: 2rem;
     --espacamento-fonte-2: 1.5rem;
 
-    --tamamho-fonte-mobile-1: 2rem;
+    --tamamho-fonte-mobile-1: 4.2rem;
     --tamamho-fonte-mobile-2: 1.8rem;
-    --tamamho-fonte-mobile-3: 1.5rem;
+    --tamamho-fonte-mobile-3: 1.2rem;
     --tamamho-fonte-mobile-4: 1rem;
 
 

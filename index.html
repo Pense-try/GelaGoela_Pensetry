@@ -1,52 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Gela Goela</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Gela Goela</title>
+  <link rel="shortcut icon" href="./src/Img/logo_gelagoela.png" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/CSS/reset.css">
-    <link rel="stylesheet" href="./src/CSS/var.css">
-    <link rel="stylesheet" href="./src/CSS/navbar.css">
-    <link rel="stylesheet" href="./src/CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./src/CSS/reset.css">
+  <link rel="stylesheet" href="./src/CSS/var.css">
+  <link rel="stylesheet" href="./src/CSS/navbar.css">
+  <link rel="stylesheet" href="./src/CSS/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav class="nav">
-          <a href="/" class="logo">
-            <img src="./src/Img/logo_gelagoela.png" alt="">
-          </a>
-          <button class="hamburger"></button>
-          <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Restaurante</a></li>
-            <li><a href="#">Quartos</a></li>
-            <li><a href="#">Contato</a></li>
+  <header class="header">
+    <nav class="nav">
+      <a href="#home" class="logo">
+        <img src="./src/Img/logo_gelagoela.png" alt="">
+      </a>
+      <button class="hamburger"></button>
+      <ul class="nav-list">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#">Hotel</a></li>
+        <li><a href="#">Restaurante</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home"> 
+      <div class="hero_filter"></div>
+
+      <div class="hero_content">
+        <h1 class="hero_title">Gela Goela</h1>
+        <h2>Hotel e Restaurante</h2>
+        <p class="hero_text">O conforto que você merece, o atendimento que você sonha.</p>
+
+        <div class="hero_button">
+          <a href="#about">Saiba Mais</a>
+          <a href="#">Faça uma Reserva</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- /hotel-section.html -->
+    <section class="hotel-section" id="about">
+      <div class="content">
+        <div class="left">
+          <h2>Sobre o Hotel e Restaurante Gela Goela</h2>
+          <ul class="features">
+            <li>Mais de 30 anos de tradição!</li>
+            <li>Conforto excepcional</li>
+            <li>Experiência gastronomica</li>
+            <li>Ambiente acolhedor</li>
           </ul>
-        </nav>
-      </header>
-    <main>
-        <section class="hero">
-            <div class="hero_filter"></div>
+        </div>
+        <div class="right">
+          <p class="description">
+            Desde 1990, o Gela Goela tem sido sinônimo de hospitalidade e sabor. Fundado por Lisa e Miro, o espaço
+            combina conforto e uma experiência gastronômica inesquecível.
+            Aqui, você encontra de tudo para agradar o paladar: deliciosos pratos caseiros, lanches irresistíveis,
+            pizzas feitas com carinho e, claro, sorvetes que fazem qualquer momento mais doce.
+            Mais do que um hotel e restaurante, somos um lugar onde histórias são criadas, sabores são descobertos e
+            todos se sentem em casa. <strong>Venha nos conhecer e viva momentos únicos!</strong>
+          </p>
+        </div>
+      </div>
+      <div class="gallery">
+        <img src="./src/Img/img_hotel1.jpg" alt="Hotel Interior">
+        <img src="./src/Img/img_hotel2.jpg" alt="Hotel Pool">
+        <img src="./src/Img/img_hotel3.jpg" alt="Hotel Room">
+      </div>
+    </section>
 
-            <div class="hero_content">
-                <h2>Hotel e Restaurante</h2>
-                <h1 class="hero_title">Gela Goela</h1>
-                <p class="hero_text">O restaurante que você merece</p>
-            </div>
-        </section>
 
-    </main>
-    <footer>
 
-    </footer>
-    
-    <script src="./src/JS/navbar.js"></script>
+    <section class="hotel__container">
+      <div class="about__content">
+
+      </div>
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+
+  <script src="./src/JS/navbar.js"></script>
+  <script src="./src/JS/scroll.js"></script>
 </body>
+
 </html>
