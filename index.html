@@ -94,14 +94,16 @@
       </div>
       <div class="cards">
         <div class="card">
+          <div class="card-square"></div>
           <div class="icon">
             <i class="fas fa-hotel"></i>
             <h3>Hotel</h3>
           </div>
           <p>Conforto e tranquilidade para sua estadia perfeita.</p>
-          <a href="#">Sabe Mais</a>
+          <a href="#hotel">Sabe Mais</a>
         </div>
         <div class="card">
+          <div class="card-square"></div>
           <div class="icon">
             <i class="fas fa-utensils"></i>
             <h3>Restaurante</h3>
@@ -114,32 +116,43 @@
 
 
     <!-- /hotel-sections.html -->
+
+    <section class="hotel-section-transition">
+      <div class="transition-filter"></div>
+      <div class="transition-content"></div>
+    </section>
+
     <section class="hotel-section" id="hotel">
       <div class="hotel-image">
-        <img src="./src/Img/img_hotel3.jpg" alt="Luxury Super Delux">
+        <img src="./src/Img/img_hotel1.jpg" alt="Luxury Super Delux">
       </div>
       <div class="hotel-content">
         <h2>Sinta-se em Casa, Mesmo Longe</h2>
         <p>O Hotel Gela Goela oferece conforto, hospitalidade e uma localização privilegiada. Situado próximo ao centro, nosso hotel permite fácil acesso a comércios, pontos turísticos e tudo o que você precisa para uma estadia prática e agradável. Contamos com quartos aconchegantes, ambiente familiar e um atendimento atencioso para garantir sua melhor experiência. Seja para uma viagem a lazer ou a trabalho, aqui você encontra o equilíbrio ideal entre comodidade e bem-estar.</p>
         <div class="buttons">
-          <a href="#" class="btn primary">Mais detalhes</a>
+          <a href="#rooms" class="btn primary">Mais detalhes</a>
           <a href="#" class="btn secondary">Reserve agora</a>
         </div>
       </div>
     </section>
 
-    <section class="hotel-section alternate">
-      <div class="hotel-image">
-        <img src="./src/Img/img_hotel3.jpg" alt="Simple Family Room">
+    <section class="hotel-section-transition">
+      <div class="transition-filter"></div>
+      <div class="transition-content"></div>
+    </section>
+
+    <section class="hotel-section alternate" id="rooms">
+      <div class="hotel-image hotel-slide">
+        <img src="./src/Img/Img_carrossel/img_quarto_1.jpg" alt="Simple Family Room">
       </div>
       <div class="hotel-content">
         <h2>Estrutura Completa para Sua Comodidade</h2>
         <p>Com uma estrutura pensada para o seu bem-estar, nosso hotel oferece tudo o que você precisa para uma estadia tranquila e aconchegante. Aqui, cada detalhe foi planejado para proporcionar conforto, praticidade e uma experiência inesquecível.</p>
         <div class="details">
-          <span><strong>Quantidade de quartos:</strong> 11 </span>
-          <span><strong>Capacidade dos quartos:</strong>  3 adultos</span>
+          <span><strong>Quantidade de quartos:</strong>  11 </span>
+          <span><strong>Capacidade dos quartos:</strong>   3 a 4 adultos</span>
           <span><strong>Estacionamento para carros e motocicletas:</strong> Sim/Incluso</span> 
-          <span>Todos os quartos possuem banheiro privativo <i class="fa-solid fa-circle-exclamation"></i></span>         
+          <span class="warning"><strong>Observação:</strong> Todos os quartos possuem banheiro privativo <i class="fa-solid fa-circle-exclamation"></i></span>         
         </div>
         <div class="buttons">
           <a href="#" class="btn primary">Reserve um Quarto</a>
@@ -163,6 +176,7 @@
 
   <script src="./src/JS/navbar.js"></script>
   <script src="./src/JS/scroll.js"></script>
+  <script src="./src/JS/slide.js"></script>
 </body>
 
 </html>
