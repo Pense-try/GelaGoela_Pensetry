@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         const targetPosition = targetElement.offsetTop;
         const startPosition = window.pageYOffset;
         const distance = targetPosition - startPosition;
-        const duration = 1000; // Duração da animação em milissegundos
+        const duration = 2000; // Duração da animação em milissegundos
         let start = null;
   
         function step(timestamp) {

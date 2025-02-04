@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="./src/CSS/var.css">
   <link rel="stylesheet" href="./src/CSS/navbar.css">
   <link rel="stylesheet" href="./src/CSS/style.css">
+  <link rel="stylesheet" href="./src/CSS/footer.css">
 </head>
 
 <body>
@@ -33,9 +34,9 @@
       <ul class="nav-list">
         <li><a href="#home">Início</a></li>
         <li><a href="#about">Sobre</a></li>
-        <li><a href="#">Hotel</a></li>
-        <li><a href="#">Restaurante</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#hotel">Hotel</a></li>
+        <li><a href="#restaurante">Restaurante</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -85,9 +86,15 @@
       </div>
     </section>
 
+    <section class="hotel-section-transition">
+      <div class="transition-filter"></div>
+      <div class="transition-content"></div>
+    </section>
+
 
     <!-- /cards-section.html -->
     <section class="info-section" id="services">
+      <div class="element-circle"></div>
       <div class="header_info">
         <h2>Escolha nossos serviços</h2>
         <p>Conforto e sabor em um só lugar. Descubra tudo o que oferecemos para tornar sua experiência única.</p>
@@ -109,7 +116,7 @@
             <h3>Restaurante</h3>
           </div>
           <p>Sabores inesquecíveis para todos os momentos.</p>
-          <a href="#">Saiba Mais</a>
+          <a href="#restaurante">Saiba Mais</a>
         </div>
       </div>
     </section>
@@ -128,7 +135,11 @@
       </div>
       <div class="hotel-content">
         <h2>Sinta-se em Casa, Mesmo Longe</h2>
-        <p>O Hotel Gela Goela oferece conforto, hospitalidade e uma localização privilegiada. Situado próximo ao centro, nosso hotel permite fácil acesso a comércios, pontos turísticos e tudo o que você precisa para uma estadia prática e agradável. Contamos com quartos aconchegantes, ambiente familiar e um atendimento atencioso para garantir sua melhor experiência. Seja para uma viagem a lazer ou a trabalho, aqui você encontra o equilíbrio ideal entre comodidade e bem-estar.</p>
+        <p>O Hotel Gela Goela oferece conforto, hospitalidade e uma localização privilegiada. Situado próximo ao centro,
+          nosso hotel permite fácil acesso a comércios, pontos turísticos e tudo o que você precisa para uma estadia
+          prática e agradável. Contamos com quartos aconchegantes, ambiente familiar e um atendimento atencioso para
+          garantir sua melhor experiência. Seja para uma viagem a lazer ou a trabalho, aqui você encontra o equilíbrio
+          ideal entre comodidade e bem-estar.</p>
         <div class="buttons">
           <a href="#rooms" class="btn primary">Mais detalhes</a>
           <a href="#" class="btn secondary">Reserve agora</a>
@@ -147,27 +158,140 @@
       </div>
       <div class="hotel-content">
         <h2>Estrutura Completa para Sua Comodidade</h2>
-        <p>Com uma estrutura pensada para o seu bem-estar, nosso hotel oferece tudo o que você precisa para uma estadia tranquila e aconchegante. Aqui, cada detalhe foi planejado para proporcionar conforto, praticidade e uma experiência inesquecível.</p>
+        <p>Com uma estrutura pensada para o seu bem-estar, nosso hotel oferece tudo o que você precisa para uma estadia
+          tranquila e aconchegante. Aqui, cada detalhe foi planejado para proporcionar conforto, praticidade e uma
+          experiência inesquecível.</p>
         <div class="details">
-          <span><strong>Quantidade de quartos:</strong>  11 </span>
-          <span><strong>Capacidade dos quartos:</strong>   3 a 4 adultos</span>
-          <span><strong>Estacionamento para carros e motocicletas:</strong> Sim/Incluso</span> 
-          <span class="warning"><strong>Observação:</strong> Todos os quartos possuem banheiro privativo <i class="fa-solid fa-circle-exclamation"></i></span>         
+          <span><strong>Quantidade de quartos:</strong> 11 </span>
+          <span><strong>Capacidade dos quartos:</strong> 3 a 4 adultos</span>
+          <span><strong>Estacionamento para carros e motocicletas:</strong> Sim/Incluso</span>
+          <span class="warning"><strong>Observação:</strong> Todos os quartos possuem banheiro privativo <i
+              class="fa-solid fa-circle-exclamation"></i></span>
         </div>
         <div class="buttons">
           <a href="#" class="btn primary">Reserve um Quarto</a>
-          <a href="#" class="btn secondary">Conheça o Restaurante</a>
+          <a href="#restaurante" class="btn secondary">Conheça o Restaurante</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel-section-transition">
+      <div class="transition-filter"></div>
+      <div class="transition-content"></div>
+    </section>
+
+    <section class="hotel-section" id="restaurante">
+      <div class="hotel-image">
+        <img src="./src/Img/img_restaurante.png" alt="">
+      </div>
+      <div class="hotel-content">
+        <h2>Sabor e Tradição em um Só Lugar</h2>
+        <p>O restaurante Gela Goela combina tradição e qualidade para oferecer refeições inesquecíveis. Com um cardápio
+          variado que inclui pratos deliciosos, lanches, pizzas e sorvetes, cada detalhe é pensado para proporcionar uma
+          experiência única. Seja para um almoço especial ou um lanche descontraído, aqui o sabor é sempre garantido.
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn primary">Faça um Pedido</a>
+          <a href="#location" class="btn secondary">Localização <i class="fa-solid fa-location-dot fa-sm"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel-section-transition">
+      <div class="transition-filter"></div>
+      <div class="transition-content"></div>
+    </section>
+
+    <!-- HTML -->
+    <section class="location-section" id="location">
+      <div class="container">
+        <h2>Localização</h2>
+        <div class="content-wrapper">
+          <div class="text-content">
+            <p>Nosso hotel está situado em uma localização estratégica, próximo ao centro da cidade, oferecendo fácil
+              acesso a comércios, pontos turísticos e serviços essenciais. Seja para uma viagem a lazer ou a trabalho,
+              aqui você encontra praticidade e conveniência para se deslocar com facilidade e aproveitar o melhor da
+              região.</p>
+            <p>O restaurante do hotel oferece uma vista deslumbrante e um menu variado, perfeito para refeições
+              inesquecíveis.</p>
+            <div class="buttons">
+              <a href="https://www.google.com/local/place/fid/0x94ebfa296f39781d:0x916d380e55a40d3c/photosphere?iu=https://lh3.googleusercontent.com/p/AF1QipP-L7RLFJEODSqVkcbKOctrcweNZEKSgHCcvkHO%3Dw160-h106-k-no-pi-0.11254019-ya359.88745-ro0-fo100&ik=CAoSLEFGMVFpcFAtTDdSTEZKRU9EU3FWa2NiS09jdHJjd2VOWkVLU2dIQ2N2a0hP"
+                target="_blank" class="btn primary">Visão 360° | exterior</a>
+              <a href="https://www.google.com/local/place/fid/0x94ebfa296f39781d:0x916d380e55a40d3c/photosphere?iu=https://lh3.googleusercontent.com/p/AF1QipOJw_U2iflk2BFJPo96pOPjQnoA5bGFVUKR-_Gu%3Dw160-h106-k-no-pi-0.11254019-ya179.88747-ro0-fo100&ik=CAoSLEFGMVFpcE9Kd19VMmlmbGsyQkZKUG85NnBPUGpRbm9BNWJHRlZVS1ItX0d1"
+                target="_blank" class="btn secondary">Visão 360° | interior</a>
+            </div>
+
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d540.7317284369539!2d-51.251218060296644!3d-24.255940758509848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ebfa296f39781d%3A0x916d380e55a40d3c!2sHotel%20E%20Restaurante%20Gela%20Goela.!5e0!3m2!1spt-BR!2sbr!4v1738606624656!5m2!1spt-BR!2sbr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel-section-transition">
+      <div class="transition-filter"></div>
+      <div class="transition-content"></div>
+    </section>
+
+    <!-- /contact.html -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2>Entre em Contato</h2>
+        <p>Fale conosco pelo WhatsApp ou siga-nos no Instagram para ficar por dentro das novidades!</p>
+
+        <div class="contact-links">
+          <!-- Link do WhatsApp -->
+          <a href="https://wa.me/5543984067332" target="_blank" class="contact-link whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+
+          <!-- Link do Instagram -->
+          <a href="https://www.instagram.com/gela_goela1990/?igsh=MW1lMnplOWd3ZDEzOQ%3D%3D" target="_blank" class="contact-link instagram">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
         </div>
       </div>
     </section>
 
 
+    <!-- /footer.html -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <a href="#home">
+            <img src="./src/Img/logo_gelagoela.png" alt="Hotel & Restaurante Logo">
+          </a>
+        </div>
 
-    <section class="hotel__container">
-      <div class="about__content">
+        <!-- Links Rápidos -->
+        <div class="footer-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#hotel">Hotel</a></li>
+            <li><a href="#restaurante">Restaurante</a></li>
+            <li><a href="#location">Localização</a></li>
+          </ul>
+        </div>
 
+        <!-- Redes Sociais -->
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-    </section>
+
+      <!-- Direitos Autorais -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gela Goela - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
 
   </main>
   <footer>
@@ -177,6 +301,7 @@
   <script src="./src/JS/navbar.js"></script>
   <script src="./src/JS/scroll.js"></script>
   <script src="./src/JS/slide.js"></script>
+  <script src="./src/php/webproxy.php"></script>
 </body>
 
 </html>

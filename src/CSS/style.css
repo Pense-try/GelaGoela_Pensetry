@@ -102,7 +102,7 @@
 
 .about-section {
   padding: 8rem 10rem;
-  background-color: var(--cor-de-fundo);
+  background-color: #fff;
 }
 
 .content {
@@ -198,8 +198,22 @@
 
 .info-section {
   padding: 8rem 1rem 10rem 1rem;
-  background-color: var(--cor-de-fundo);
+  background-color: #fff;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.element-circle {
+  width: 2000px;
+  height: 2000px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -6%);
+  background-color: var(--cor-terciaria);
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .info-section .header_info {
@@ -230,7 +244,7 @@
 
 .card {
   background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   padding: 1rem;
   text-align: center;
   width: 300px;
@@ -242,11 +256,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   position: relative;
+  z-index: 2;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow:  2px 4px 15px -1px var(--cor-de-fundo), 4px 8px 10px -1px rgba(0, 0, 0, 0.3) ;
+  box-shadow: 4px 8px 10px -1px rgba(0, 0, 0, 0.3) ;
 }
 
 .card-square {
@@ -297,6 +312,13 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .info-section h2 {
+    font-size: var(--tamanho-fonte-3);
+    margin-bottom: 1rem;
+  }
+  .info-section p {
+    font-size: var(--tamanho-fonte-5);
+  }
   .cards {
     flex-direction: column; /* Stack cards vertically */
     align-items: center;
@@ -496,11 +518,146 @@
 }
 
 
+/* CSS para a seção de localização   */
+.location-section {
+  padding: 8rem 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.location-section h2 {
+  font-size: var(--tamanho-fonte-2);
+  font-family: var(--fonte-secundaria);
+  font-weight: var(--peso-fonte-3);
+  color: var(--cor-fonte-2);
+  margin-bottom: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+}
+
+.text-content p {
+  font-size: var(--tamanho-fonte-4);
+  font-family: var(--fonte-principal);
+  font-weight: var(--peso-fonte-3);
+  margin-bottom: 15px;
+}
+
+.map-container {
+  flex: 1;
+  max-width: 600px; /* Largura máxima do mapa */
+  height: 300px; /* Altura fixa para o mapa */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: solid 2px var(--cor-terciaria);
+  padding: 1rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+  }
+
+  .map-container {
+      width: 90%;
+      height: 200px;
+      flex: none;
+  }
+
+  .text-content {
+      text-align: center;
+      flex: none;
+  }
+
+  .location-section h2 {
+      font-size: 1.5rem;
+  }
+
+  .text-content p {
+      font-size: 0.9rem;
+  }
+}
 
 
+/* /contact.css */
+.contact-section {
+  background: #ffffff;
+  padding: 8rem 10%;
+  text-align: center;
+}
 
+.contact-container h2 {
+  font-size: var(--tamanho-fonte-2);
+  font-family: var(--fonte-secundaria);
+  font-weight: var(--peso-fonte-3);
+  margin-bottom: 2rem;
+  color: var(--cor-fonte-2);
+}
 
-.hotel__container {
-  height: 100vh;
+.contact-container p {
+  font-size: var(--tamanho-fonte-4);
+  font-family: var(--fonte-principal);
+  font-weight: var(--peso-fonte-3);
+  margin-bottom: 2rem;
+  color: var(--cor-fonte-2);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  font-size: var(--tamanho-fonte-4);
+  font-family: var(--fonte-principal);
+  font-weight: var(--peso-fonte-2);
+  color: var(--cor-terciaria);
+  border: 1px solid var(--cor-terciaria);
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  min-width: 200px;
+}
+
+.contact-link:hover {
   background-color: var(--cor-terciaria);
+  color: var(--cor-fonte-1);
+  transition: all 0.4s ease-in;
+}
+
+.contact-link i {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
